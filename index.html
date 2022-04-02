@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            transition: 1s;
+            left: 100px;
+            top: 100px;
+            background-color: red;
+            position: absolute;
+            border-radius: 100%;
+            opacity: 50%;
+        }
+
+        .box1{
+            width: 100px;
+            height: 100px;
+            transition: 1s;
+            left: 1000px;
+            top: 100px;
+            background-color: red;
+            position: absolute;
+            border-radius: 100%;
+            opacity: 50%;
+        }
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            transition: 1s;
+            left: 800px;
+            top: 300px;
+            background-color: red;
+            position: absolute;
+            border-radius: 100%;
+            opacity: 50%;
+        }
+
+        .box3{
+            width: 100px;
+            height: 100px;
+            transition: 1s;
+            left: 500px;
+            top: 200px;
+            background-color: red;
+            position: absolute;
+            border-radius: 100%;
+            opacity: 50%;
+        }
+
+        .box4{
+            width: 100px;
+            height: 100px;
+            transition: 1s;
+            left: 600px;
+            top: 400px;
+            background-color: red;
+            position: absolute;
+            border-radius: 100%;
+            opacity: 50%;
+        }
+
+        .box5{
+            width: 100px;
+            height: 100px;
+            transition: 1s;
+            left: 200px;
+            top: 200px;
+            background-color: red;
+            position: absolute;
+            border-radius: 100%;
+            opacity: 50%;
+        }
+
+        .box6{
+            width: 100px;
+            height: 100px;
+            transition: 1s;
+            left: 500px;
+            top: 500px;
+            background-color: red;
+            position: absolute;
+            border-radius: 100%;
+            opacity: 50%;
+        }
+
+        .box7{
+            width: 100px;
+            height: 100px;
+            transition: 1s;
+            left: 300px;
+            top: 350px;
+            background-color: red;
+            position: absolute;
+            border-radius: 100%;
+            opacity: 50%;
+        }
+
+        .box8{
+            width: 100px;
+            height: 100px;
+            transition: 1s;
+            left: 450px;
+            top: 50px;
+            background-color: red;
+            position: absolute;
+            border-radius: 100%;
+            opacity: 50%;
+        }
+
+        .box9{
+            width: 100px;
+            height: 100px;
+            transition: 1s;
+            left: 1250px;
+            top: 150px;
+            background-color: red;
+            position: absolute;
+            border-radius: 100%;
+            opacity: 50%;
+        }
+
+        .box10{
+            width: 100px;
+            height: 100px;
+            transition: 1s;
+            left: 1050px;
+            top: 440px;
+            background-color: red;
+            position: absolute;
+            border-radius: 100%;
+            opacity: 50%;
+        }
+
+        .box11{
+            width: 100px;
+            height: 100px;
+            transition: 1s;
+            left: 1150px;
+            top: 650px;
+            background-color: red;
+            position: absolute;
+            border-radius: 100%;
+            opacity: 50%;
+        }
+
+        .box12{
+            width: 100px;
+            height: 100px;
+            transition: 1s;
+            left: 50px;
+            top: 650px;
+            background-color: red;
+            position: absolute;
+            border-radius: 100%;
+            opacity: 90%;
+        }
+
+        .box13{
+            width: 100px;
+            height: 100px;
+            transition: 1s;
+            left: 450px;
+            top: 690px;
+            background-color: red;
+            position: absolute;
+            border-radius: 100%;
+            opacity: 50%;
+        }
+
+        .box14{
+            width: 100px;
+            height: 100px;
+            transition: 1s;
+            left: 750px;
+            top: 650px;
+            background-color: red;
+            position: absolute;
+            border-radius: 100%;
+            opacity: 50%;
+        }
+
+        .box15{
+            width: 70px;
+            height: 70px;
+            transition: 1s;
+            left: 1550px;
+            top: 350px;
+            background-color: black;
+            position: absolute;
+            border-radius: 100%;
+            opacity: 100%;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex;"><h1>Time left: </h1><h1 class="timer">9</h1></div>
+    <div class="box"></div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+    <div class="box8"></div>
+    <div class="box9"></div>
+    <div class="box10"></div>
+    <div class="box11"></div>
+    <div class="box12"><h1 class="text"></h1></div>
+    <div class="box13"></div>
+    <div class="box14"></div>
+    <div class="box15"><h1> °□° </h1></div>
+    <script>
+        let time = 9;
+        let score = 0;
+        let x1 = 100;
+        let x2 = 800;
+        let x3 = 200;
+        let x4 = 800;
+        let x5 = 100;
+        let x6 = 1000;
+        let x7 = 1500;
+        let x8 = 500;
+        let x9 = 800;
+        let x10 = 100;
+        let x11 = 800;
+        let x12 = 300;
+        let x13 = 100;
+        let x14 = 100;
+        let x15 = 800;
+        let x16 = 800;
+        let s3 = 50;
+        let s4 = 1;
+        let w = 'E';
+        let timer = document.querySelector('.timer');
+        let text = document.querySelector('.text');  
+        let box = document.querySelector('.box');
+        let box1 = document.querySelector('.box1');
+        let box2 = document.querySelector('.box2');
+        let box3 = document.querySelector('.box3');
+        let box4 = document.querySelector('.box4');
+        let box5 = document.querySelector('.box5');
+        let box6 = document.querySelector('.box6');
+        let box7 = document.querySelector('.box7');
+        let box8 = document.querySelector('.box8');
+        let box9 = document.querySelector('.box9');
+        let box10 = document.querySelector('.box10');
+        let box11 = document.querySelector('.box11');
+        let box12 = document.querySelector('.box12');
+        let box13 = document.querySelector('.box13');
+        let box14 = document.querySelector('.box14');
+        let box15 = document.querySelector('.box15');
+
+        setInterval(timer1, 1000)
+        setTimeout(lose, 9000);
+        setInterval(move, 100);
+
+        function lose(){
+            alert('NOOOOOOOOOOOOOO')
+        }
+
+        function timer1(){
+            time = time - 1;
+            timer.innerHTML = time;
+        }
+
+        function move(){
+            x1 = x1 + 30;
+            x2 = x2 - 10;
+            x3 = x3 + 10;
+            x4 = x4 - 10;
+            x5 = x5 + 10;
+            x6 = x6 - 10;
+            x7 = x7 - 20;
+            x8 = x8 + 5;
+            x9 = x9 - 10;
+            x10 = x10 + 5;
+            x11 = x11 - 10;
+            x12 = x12 - 3;
+            x13 = x13 + 30;
+            x14 = x14 + 10;
+            x15 = x15 - 1;
+            x16 = x16 - 10;
+            s3 = s3 + 1;
+            s4 = s4 + 3;
+            w = w+'E';
+
+            box.style.left = x1 + 'px';
+
+            box1.style.top = x2+ 'px';
+            box1.style.backgroundColor = 'green';
+
+            box2.style.left = x3 + 'px';
+            box2.style.width = s3 + 'px';
+            box2.style.height = s3 + 'px';
+            box2.style.backgroundColor = 'purple';
+
+            box3.style.left = x4 + 'px';
+
+            box4.style.top = x5 + 'px';
+            box4.style.backgroundColor = 'green';
+
+            box5.style.top = x6 + 'px';
+            box5.style.backgroundColor = 'green';
+
+            box6.style.left = x7 + 'px';
+
+            box7.style.top = x8 + 'px';
+            box7.style.backgroundColor = 'yellow';
+            box7.style.width = s4 + 'px';
+            box7.style.height = s4 + 'px';
+
+            box8.style.top = x9 + 'px';
+            box8.style.width = s4 + 'px';
+            box8.style.height = s4 + 'px';
+            box8.style.backgroundColor = 'yellow';
+
+            box9.style.left = x10 + 'px';
+            box9.style.top = x10 + 'px';
+            box9.style.backgroundColor = 'black';
+
+            box10.style.left = x11 + 'px';
+            box10.style.top = x11 + 'px';
+            box10.style.backgroundColor = 'black';
+
+            box11.style.width = x12 + 'px';
+            box11.style.height = x12 + 'px';
+            box11.style.backgroundColor = 'blue';
+
+            box12.style.width = x13 + 'px';
+            text.innerHTML = w;
+            box12.style.backgroundColor = 'cyan';
+
+            box13.style.left = x14 + 'px';
+
+            box14.style.left = x15 + 'px';
+            box14.style.top = x15 + 'px';
+            box14.style.backgroundColor = 'black';
+        }
+            box.onclick = function(){
+                score = score + 1;
+                box.style.display = 'none';
+                if (score == 16){
+                    alert('YAAAAAAAAAAAAAAH')
+                }
+            }
+
+            box1.onclick = function(){
+                score = score + 1;
+                box1.style.display = 'none';
+                if (score == 16){
+                    alert('YAAAAAAAAAAAAAAH')
+                }
+            }
+
+            box2.onclick = function(){
+                score = score + 1;
+                box2.style.display = 'none';
+                if (score == 16){
+                    alert('YAAAAAAAAAAAAAAH')
+                }
+            }
+
+            box3.onclick = function(){
+                score = score + 1;
+                box3.style.display = 'none';
+                if (score == 16){
+                    alert('YAAAAAAAAAAAAAAH')
+                }
+            }
+
+            box4.onclick = function(){
+                score = score + 1;
+                box4.style.display = 'none';
+                if (score == 16){
+                    alert('YAAAAAAAAAAAAAAH')
+                }
+            }
+
+            box5.onclick = function(){
+                score = score + 1;
+                box5.style.display = 'none';
+                if (score == 16){
+                    alert('YAAAAAAAAAAAAAAH')
+                }
+            }
+
+            box6.onclick = function(){
+                score = score + 1;
+                box6.style.display = 'none';
+                if (score == 16){
+                    alert('YAAAAAAAAAAAAAAH')
+                }
+            }
+
+            box7.onclick = function(){
+                score = score + 1;
+                box7.style.display = 'none';
+                if (score == 16){
+                    alert('YAAAAAAAAAAAAAAH')
+                }
+            }
+
+            box8.onclick = function(){
+                score = score + 1;
+                box8.style.display = 'none';
+                if (score == 16){
+                    alert('YAAAAAAAAAAAAAAH')
+                }
+            }
+
+            box9.onclick = function(){
+                score = score + 1;
+                box9.style.display = 'none';
+                if (score == 16){
+                    alert('YAAAAAAAAAAAAAAH')
+                }
+            }
+
+            box10.onclick = function(){
+                score = score + 1;
+                box10.style.display = 'none';
+                if (score == 16){
+                    alert('YAAAAAAAAAAAAAAH')
+                }
+            }
+
+            box11.onclick = function(){
+                score = score + 1;
+                box11.style.display = 'none';
+                if (score == 16){
+                    alert('YAAAAAAAAAAAAAAH')
+                }
+            }
+
+            box12.onclick = function(){
+                score = score + 1;
+                box12.style.display = 'none';
+                if (score == 16){
+                    alert('YAAAAAAAAAAAAAAH')
+                }
+            }
+
+            box13.onclick = function(){
+                score = score + 1;
+                box13.style.display = 'none';
+                if (score == 16){
+                    alert('YAAAAAAAAAAAAAAH')
+                }
+            }
+
+            box14.onclick = function(){
+                score = score + 1;
+                box14.style.display = 'none';
+                if (score == 16){
+                    alert('YAAAAAAAAAAAAAAH')
+                }
+            }
+
+            box15.onclick = function(){
+                score = score + 1;
+                box15.style.display = 'none';
+                if (score == 16){
+                    alert('YAAAAAAAAAAAAAAH')
+                }
+            }
+    </script>
+</body>
+</html>
